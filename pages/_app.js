@@ -1,12 +1,14 @@
-import Head from 'next/head'
-import '../styles/globals.css'
+import { ThemeProvider } from "next-themes";
+import Header from "../components/Header";
 
-function MyApp({ Component, pageProps }) {
-  <Head>
-        <link rel="shortcut icon" href="/css.png" />
-   </Head>
- 
-  return <Component {...pageProps} />
+import "../styles/globals.css";
+
+export default function App({ Component, pageProps }) {
+  return (
+    <ThemeProvider attribute="class">
+      <Header />
+
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
-
-export default MyApp
