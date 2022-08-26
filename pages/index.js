@@ -1,7 +1,14 @@
 import Header from "../components/Header";
 import Image from "next/image";
 import { ThemeProvider } from "next-themes";
-import MyTabs from '../components/Tabs'
+import MyTabs from "../components/Tabs";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+
+const parent = {
+  variantA: { scale: 1.25 },
+  variantB: { scale: 0.9 },
+};
 
 export default function Home() {
   return (
@@ -22,36 +29,97 @@ export default function Home() {
               <div>
                 <div>
                   <div className="mt-5 sm:ml-10 flex justify-between py-3 sm:w-4/5 mx-2 bg-gray-200 px-4 dark:bg-gray-700 shadow-lg rounded">
-                    <Image src="/html.svg" alt="html" width="50" height="50" />
-                    <Image src="/css.svg" alt="html" width="50" height="50" />
-                    <Image src="/js.svg" alt="html" width="60" height="55" />
-                    <Image src="/react.svg" alt="html" width="45" height="50" />
+                    <motion.div 
+                    variants={parent} 
+                    whileHover="variantA"
+                    whileTap="variantB">
+                    
+                      <Image
+                        src="/html.svg"
+                        alt="html"
+                        width="50"
+                        height="50"
+                      />
+                    </motion.div>
+                    <motion.div 
+                    variants={parent} 
+                    whileHover="variantA"
+                    whileTap="variantB">    
 
-                    <Image
-                      src="/next-js.svg"
-                      alt="html"
-                      width="45"
-                      height="50"
-                    />
-                    <Image
-                      src="/bootstrap.svg"
-                      alt="html"
-                      width="60"
-                      height="50"
-                    />
-                    <Image
-                      src="/tailwind.svg"
-                      alt="html"
-                      width="50"
-                      height="50"
-                    />
+                      <Image
+                        src="/css.svg"
+                        alt="html"
+                        width="50"
+                        height="50"
+                      />
+                    </motion.div>
+                     <motion.div 
+                    variants={parent} 
+                    whileHover="variantA"
+                    whileTap="variantB">
+                      <Image
+                        src="/js.svg"
+                        alt="html"
+                        width="50"
+                        height="50"
+                      />
+                    </motion.div>
+                    <motion.div 
+                    variants={parent} 
+                    whileHover="variantA"
+                    whileTap="variantB">
+                      <Image
+                        src="/react.svg"
+                        alt="html"
+                        width="50"
+                        height="50"
+                      />
+                    </motion.div>
+
+                    <motion.div 
+                    variants={parent} 
+                    whileHover="variantA"
+                    whileTap="variantB">
+                      <Image
+                        src="/next-js.svg"
+                        alt="html"
+                        width="45"
+                        height="50"
+                      />
+                    </motion.div>
+                    <motion.div 
+                    variants={parent} 
+                    whileHover="variantA"
+                    whileTap="variantB">
+                      <Image
+                        src="/bootstrap.svg"
+                        alt="html"
+                        width="50"
+                        height="50"
+                      />
+                    </motion.div>
+                    <motion.div 
+                    variants={parent} 
+                    whileHover="variantA"
+                    whileTap="variantB">
+                      <Image
+                        src="/tailwind.svg"
+                        alt="html"
+                        width="50"
+                        height="50"
+                      />
+                    </motion.div>
                   </div>
                 </div>
               </div>
               <div>
-                <h4 className="hidden sm:flex text-sky-600 dark:sm:text-sky-400 sm:m-10 sm:text-xl sm:font-semibold sm:underline decoration-slice cursor-pointer ">
-                  Fale comigo!
-                </h4>
+                <Link href="/contato">
+                  <a>
+                    <h4 className="hidden sm:flex text-sky-600 dark:sm:text-sky-400 sm:m-10 sm:text-xl sm:font-semibold sm:underline decoration-slice cursor-pointer ">
+                      Fale comigo!
+                    </h4>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="sm:flex sm:bg-gradient-to-b sm:from-gray-200 dark:sm:bg-gradient-to-r dark:sm:from-gray-700 rounded-full ">
@@ -61,9 +129,13 @@ export default function Home() {
                 width="400"
                 height="400"
               />
-              <h4 className="sm:hidden flex w-full justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
-                Fale comigo!
-              </h4>
+              <Link href="/contato">
+                <a>
+                  <h4 className="sm:hidden flex w-full justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
+                    Fale comigo!
+                  </h4>
+                </a>
+              </Link>
             </div>
           </main>
 
@@ -74,10 +146,7 @@ export default function Home() {
               </h2>
             </div>
             <MyTabs />
-
-           
           </section>
-
         </ThemeProvider>
       </div>
     </>
