@@ -18,7 +18,7 @@ const content = [ContentCoruss, ContentConsultas, ContentBetoven];
 
 
 export default function Tabs() {
-  const [selectTabs, setSelectTabs] = useState(Tabs[0]);
+  const [selectTabs, setSelectTabs] = useState(content[0]);
   
 
   return (
@@ -27,17 +27,17 @@ export default function Tabs() {
         <ul className="m-auto">
           {items.map((item) => <li
               key={item.content}
-              className={item === selectTabs ? "selected" : ""}
               onClick={() => setSelectTabs(item)}
             >
             {item}</li>)}
         </ul>
-        
         <div className="w-2/3">
           <ul>
             {content.map((content) => <li
             key={content}
+            className={selectTabs === <CardCoruss/> ? content : ""}
             >{content}</li>
+
             )}
             
           </ul>

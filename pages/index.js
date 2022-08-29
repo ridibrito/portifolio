@@ -1,9 +1,10 @@
 import Header from "../components/Header";
 import Image from "next/image";
 import { ThemeProvider } from "next-themes";
-import MyTabs from "../components/Tabs";
+import Tabs from "../components/Tabs";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import MyTabs from '../components/contents/tabsteste'
 
 const parent = {
   variantA: { scale: 1.25 },
@@ -145,7 +146,8 @@ export default function Home() {
                 Alguns trabalhos
               </h2>
             </div>
-            <MyTabs />
+           
+            <MyTabs/>
           </section>
         </ThemeProvider>
       </div>
