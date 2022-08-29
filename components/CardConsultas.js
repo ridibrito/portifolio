@@ -2,7 +2,7 @@ export default function CardConsultas(){
     return(<>
     
     <div
-              className="group block max-w-xs mx-auto rounded-lg p-6 bg-gray-100 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-600 hover:ring-sky-600 active:bg-sky-600 dark:active:bg-gray-900 dark:active:ring-gray-900 
+              className="group block max-w-sm mx-auto rounded-lg p-6 bg-gray-100 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-600 hover:ring-sky-600 active:bg-sky-600 dark:active:bg-gray-900 dark:active:ring-gray-900 
               dark:bg-gray-600 dark:hover:ring-gray-600 mt-3 cursor-pointer">
               <div className="flex items-center space-x-3 ">
                 <svg

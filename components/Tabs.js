@@ -1,52 +1,25 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion"
-import CardCoruss from "./cardCoruss";
-import CardConsultas from "./CardConsultas";
-import CardBetoven from "./CardBetoven";
-import ContentCoruss from "./contents/contentCoruss";
-import ContentConsultas from "./contents/contentConsultas";
-import ContentBetoven from "./contents/contentBetoven";
+import { Tab } from '@headlessui/react'
+import CardCoruss from './cardCoruss'
+import CardConsultas from './CardConsultas'
+import CardBetoven from './CardBetoven'
+import ContentCoruss from './contents/contentCoruss'
+import ContentConsultas from './contents/contentConsultas'
+import ContentBetoven from './contents/contentBetoven'
 
-
-
-const coruss = <CardCoruss/>
-const consultas = <CardConsultas/>
-const betoven = <CardBetoven/>
-const items = [coruss, consultas, betoven];
-
-const content = [ContentCoruss, ContentConsultas, ContentBetoven];
-
-
-export default function Tabs() {
-  const [selectTabs, setSelectTabs] = useState(content[0]);
-  
-
+export default function MyTabs() {
   return (
-    <>
-      <div className="sm:flex items-start justify-between sm:max-w-7xl sm:mx-auto mx-3 mt-5">
-        <ul className="m-auto">
-          {items.map((item) => <li
-              key={item.content}
-              onClick={() => setSelectTabs(item)}
-            >
-            {item}</li>)}
-        </ul>
-        <div className="w-2/3">
-          <ul>
-            {content.map((content) => <li
-            key={content}
-            className={selectTabs === <CardCoruss/> ? content : ""}
-            >{content}</li>
-
-            )}
-            
-          </ul>
-          </div>
-
-
-      
-     
-        </div>
-    </>
-  );
+    <div className='block sm:mx-auto sm:max-w-7xl'>
+    <Tab.Group>
+      <Tab.List className="block justify-around mx-auto mt-3 md:flex ">
+        <Tab className='mx-3 sm:mt-3 sm:ml-3'><CardCoruss/></Tab>
+        <Tab className="mx-3"><CardConsultas/></Tab>
+        <Tab className="mx-3 sm:mr-3"><CardBetoven/></Tab>
+      </Tab.List>
+      <Tab.Panels className="block mx-auto w-max-7xl mt-5 p-5">
+        <Tab.Panel><ContentCoruss /></Tab.Panel>
+        <Tab.Panel><ContentConsultas /></Tab.Panel>
+        <Tab.Panel><ContentBetoven /></Tab.Panel>
+      </Tab.Panels>
+    </Tab.Group>
+    </div>)
 }

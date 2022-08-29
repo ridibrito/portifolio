@@ -1,10 +1,9 @@
 import Header from "../components/Header";
 import Image from "next/image";
 import { ThemeProvider } from "next-themes";
-import Tabs from "../components/Tabs";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import MyTabs from '../components/contents/tabsteste'
+import MyTabs from '../components/Tabs'
 
 const parent = {
   variantA: { scale: 1.25 },
@@ -114,25 +113,25 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <Link href="/contato">
+                <Link href="/">
                   <a>
-                    <h4 className="hidden sm:flex text-sky-600 dark:sm:text-sky-400 sm:m-10 sm:text-xl sm:font-semibold sm:underline decoration-slice cursor-pointer ">
+                    <h4 className="hidden md:flex text-sky-600 dark:sm:text-sky-400 sm:m-10 sm:text-xl sm:font-semibold sm:underline decoration-slice cursor-pointer ">
                       Fale comigo!
                     </h4>
                   </a>
                 </Link>
               </div>
             </div>
-            <div className="sm:flex sm:bg-gradient-to-b sm:from-gray-200 dark:sm:bg-gradient-to-r dark:sm:from-gray-700 rounded-full ">
+            <div className="md:flex sm:bg-gradient-to-b sm:from-gray-200 dark:sm:bg-gradient-to-r dark:sm:from-gray-700 rounded-full ">
               <Image
                 src="/foto2.png"
                 alt="fotoRicardo"
                 width="400"
                 height="400"
               />
-              <Link href="/contato">
+              <Link href="/">
                 <a>
-                  <h4 className="sm:hidden flex w-full justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
+                  <h4 className="md:hidden flex w-11/12 mx-auto justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
                     Fale comigo!
                   </h4>
                 </a>
@@ -140,13 +139,13 @@ export default function Home() {
             </div>
           </main>
 
-          <section className="bg-gray-200 dark:bg-gray-700  h-screen">
+          <section className="bg-gray-200 dark:bg-gray-700  h-full">
             <div>
               <h2 className="text-gray-900 text-xl font-normal text-center pt-3 dark:text-gray-400">
                 Alguns trabalhos
               </h2>
             </div>
-           
+
             <MyTabs/>
           </section>
         </ThemeProvider>
