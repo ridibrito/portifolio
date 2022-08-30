@@ -5,7 +5,7 @@ export default function Footer(){
         
         <footer className="bg-gray-100 dark:bg-gray-600 py-10 flex justify-center dark:border-2 border-gray-700">
             <div>
-              <h3>Copyright © 2022 Ricardo Albuquerque. Todos os direitos reservados.
+              <h3 className="text-sm text-center mx-3">Copyright © 2022 Ricardo Albuquerque. Todos os direitos reservados.
               </h3>
               <ul className="flex justify-center">
                 <Link href="/politicaDePrivacidade"><a><li className="text-sm">Política de Privacidade</li></a></Link>
