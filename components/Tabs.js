@@ -4,7 +4,7 @@ import CardConsultas from './CardConsultas'
 import CardBetoven from './CardBetoven'
 import ContentCoruss from './contents/contentCoruss'
 import ContentConsultas from './contents/contentConsultas'
-import ContentBetoven from './contents/contentBetoven'
+import ContentBetoven from './contents/contentSiteCoruss'
 
 export default function MyTabs() {
   return (

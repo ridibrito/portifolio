@@ -6,7 +6,7 @@ const parent = {
   variantA: { scale: 1.25 },
   variantB: { scale: 0.9 },
 };
-export default function ContentCoruss() {
+export default function ContentSiteCoruss() {
   return (
     <>
       <div
@@ -14,44 +14,46 @@ export default function ContentCoruss() {
               dark:bg-gray-600 dark:hover:ring-gray-600 mt-3"
       >
         <h2 className="text-gray-900 text-xl font-normal p-4 pb-0 dark:text-gray-400">
-          Betoven
+          Site coruss
         </h2>
         <p className="text-gray-900 text-lg p-4 pb-0 dark:text-gray-400">
-          Plano de saúde para Pet. - Site.
+          Página de vendas ERP coruss
         </p>
         <div className="sm:flex justify-center">
           <Image
-            src="/betoven.png"
+            src="/sitecoruss.png"
             alt="dashboardCoruss"
-            width="300"
+            width="700"
             height="400"
           />
           <ul className="list-disc sm:w-1/3 text-gray-900 pb-3 dark:text-gray-400 px-5 ml-3 font-semibold">
             <li>
-              Cadastro de consultas e procedimentos
+              Página Home
               <p className="font-normal text-sm">
-                Não perca mais uma consulta marcada.
+                Apresentação completa do produto.
               </p>
             </li>
             <li>
-              Medicamentos
+             Preços e freemium
               <p className="font-normal text-sm">
-                Registre os medicamentos ou tratamentos passados durante a consulta.
+                Experimente grátis por 30 dias.
               </p>
             </li>
            
           
             <li>
-              Histórico
+              Blog 
               <p className="font-normal text-sm">
-                Após a consulta, registre seu próprio prontoário.
+                Feito em NextJS, com abordagem de todas as features do sistema.
               </p>
             </li>
-            <div className="mt-3">
-            <p className="font-normal ">
-               Tenha controle da sua saúde ou de quem você ama, na palma da sua mão.
+            <li>
+             Suporte
+              <p className="font-normal text-sm">
+                Página de contato, Documentação API para integração com outros produtos.
               </p>
-            </div>
+            </li>
+          
             <h2 className="mt-3">WEB E MOBILE</h2>
             
           
@@ -70,15 +72,9 @@ export default function ContentCoruss() {
               <div>
                 <Image src="/tailwind.svg" alt="html" width="30" height="30" />
               </div>
-              <div>
-                <Image src="/prisma-3.svg" alt="html" width="30" height="30" />
-              </div>
-              <div>
-                <Image src="/docker.svg" alt="html" width="30" height="30" />
-              </div>
-              <div>
-                <Image src="/postgresql.svg" alt="html" width="30" height="30" />
-              </div>
+             
+             
+             
             </div>
           </ul>
         </div>
@@ -90,8 +86,8 @@ export default function ContentCoruss() {
         </p>
         <p className="pl-4 text-sm pb-4">
           Link da aplicação:
-          <Link href="https://https://betoven.vercel.app/" target="_blank">
-            <a className="ml-2 text-sky-600">https://betoven.vercel.app/</a>
+          <Link href="https://coruss.online/" target="_blank">
+            <a className="ml-2 text-sky-600">coruss.online</a>
           </Link>
         </p>
       </div>

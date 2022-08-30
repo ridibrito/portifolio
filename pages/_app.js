@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Head from "next/head";
 
 import "../styles/globals.css";
+import Footer from "../components/footer";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }) {
       <Header />
 
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   );
 }

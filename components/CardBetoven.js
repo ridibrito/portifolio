@@ -21,12 +21,11 @@ export default function CardBetoven(){
                 </svg>
 
                 <h3 className="text-slate-900 group-hover:text-white font-semibold dark:text-gray-400">
-                  Betoven
+                  Site coruss
                 </h3>
               </div>
               <p className="text-slate-500 group-hover:text-white text-sm dark:text-gray-400  ">
-                Site plano de saúde pet - Betoven e
-                CRM vendas e meio de pagamento.
+               Página de vendas coruss ERP, com meio de pagamento.
               </p>
             </div>
     
