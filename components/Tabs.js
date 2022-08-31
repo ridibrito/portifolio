@@ -8,9 +8,9 @@ import ContentBetoven from './contents/contentSiteCoruss'
 
 export default function MyTabs() {
   return (
-    <div className='block sm:mx-auto sm:max-w-7xl'>
+    <div className='block mx-auto sm:max-w-7xl'>
     <Tab.Group>
-      <Tab.List className="block justify-around mx-auto mt-3 md:flex ">
+      <Tab.List className="block sm:justify-around mx-auto mt-3 md:flex ">
         <Tab className='mx-3 sm:mt-3 sm:ml-3'><CardCoruss/></Tab>
         <Tab className="mx-3"><CardConsultas/></Tab>
         <Tab className="mx-3 sm:mr-3"><CardBetoven/></Tab>

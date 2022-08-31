@@ -85,13 +85,13 @@ export default function ContentCoruss() {
 
         <p>
           <Link href="/consultas">
-            <a className="text-sky-600 text-sm pl-4">Ver mais...</a>
+            <a className="text-sky-600 text-sm pl-4" target="_blank">Ver mais...</a>
           </Link>
         </p>
         <p className="pl-4 text-sm pb-4">
           Link da aplicação:
-          <Link href="https://consultas-zeta.vercel.app/" target="_blank">
-            <a className="ml-2 text-sky-600">consultas-zeta.vercel.app/</a>
+          <Link href="https://consultas-zeta.vercel.app/" >
+            <a className="ml-2 text-sky-600" target="_blank">consultas-zeta.vercel.app/</a>
           </Link>
         </p>
       </div>

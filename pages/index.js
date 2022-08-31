@@ -4,13 +4,18 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import MyTabs from '../components/Tabs'
 import About from '../components/About'
+import Lgpd from "../components/lgpd";
+import { useState } from "react";
 
 const parent = {
   variantA: { scale: 1.25 },
   variantB: { scale: 0.9 },
 };
 
+
+
 export default function Home() {
+ 
   return (
     <>
       <div>
@@ -151,6 +156,10 @@ export default function Home() {
           <section>
             <About />
           </section>
+          <div className="flex justify-center">
+          <Lgpd  />
+          </div>
+
         </ThemeProvider>
       </div>
     </>

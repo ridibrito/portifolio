@@ -81,13 +81,13 @@ export default function ContentSiteCoruss() {
 
         <p>
           <Link href="/consultas">
-            <a className="text-sky-600 text-sm pl-4">Ver mais...</a>
+            <a className="text-sky-600 text-sm pl-4"target="_blank">Ver mais...</a>
           </Link>
         </p>
         <p className="pl-4 text-sm pb-4">
           Link da aplicação:
-          <Link href="https://coruss.online/" target="_blank">
-            <a className="ml-2 text-sky-600">coruss.online</a>
+          <Link href="https://coruss.online/">
+            <a className="ml-2 text-sky-600" target="_blank">coruss.online</a>
           </Link>
         </p>
       </div>

@@ -98,13 +98,13 @@ export default function ContentCoruss() {
 
         <p>
           <Link href="/coruss">
-            <a className="text-sky-600 text-sm pl-4">Ver mais...</a>
+            <a className="text-sky-600 text-sm pl-4" >Ver mais...</a>
           </Link>
         </p>
         <p className="pl-4 text-sm pb-4">
           Link da aplicação:
-          <Link href="https://coruss.online" target="_blank">
-            <a className="ml-2 text-sky-600">app.coruss.online</a>
+          <Link href="https://coruss.online" >
+            <a className="ml-2 text-sky-600" target="_blank">app.coruss.online</a>
           </Link>
         </p>
       </div>

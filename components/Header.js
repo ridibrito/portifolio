@@ -18,20 +18,20 @@ export default function Header() {
         </div>
         <div className="flex items-center pt-">
           <Link href="https://github.com/ridibrito">
-            <a className="flex hover:text-sky-600 text-gray-700 hover:ease-in hover:duration-300 dark:text-gray-400">
+            <a className="flex hover:text-sky-600 text-gray-700 hover:ease-in hover:duration-300 dark:text-gray-400" target="_blank">
               <AiFillGithub className="w-5 sm:w-7 h-7 " />
               <span className="hidden md:flex pt-1 text-sm mr-4"> Github </span>
             </a>
           </Link>
 
           <Link href="https://www.linkedin.com/in/ricardobalbuquerque/">
-            <a className="flex sm: hover:text-sky-600 text-gray-700 hover:ease-in hover:duration-300 dark:text-gray-400">
+            <a className="flex sm: hover:text-sky-600 text-gray-700 hover:ease-in hover:duration-300 dark:text-gray-400" target="_blank">
               <RiLinkedinBoxFill className="w-5 sm:w-7 h-7" />
               <span className="hidden md:flex pt-1 text-sm mr-4  "> LinkedIn </span>
             </a>
           </Link>
           
-          <FiMail className="w-5 sm:w-7 h-7 text-sky-600 dark:text-sky-400 cursor-pointer hover:text-gray-700 hover:ease-in hover:duration-300"/>
+          
           
         </div>
       </div>
