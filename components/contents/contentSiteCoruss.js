@@ -86,8 +86,8 @@ export default function ContentSiteCoruss() {
         </p>
         <p className="pl-4 text-sm pb-4">
           Link da aplicação:
-          <Link href="https://coruss.online/">
-            <a className="ml-2 text-sky-600" target="_blank">coruss.online</a>
+          <Link href="https://site-coruss.vercel.app/">
+            <a className="ml-2 text-sky-600" target="_blank">site-coruss.online</a>
           </Link>
         </p>
       </div>
