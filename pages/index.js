@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import MyTabs from '../components/Tabs'
 import About from '../components/About'
 import Lgpd from "../components/lgpd";
-import { useState } from "react";
 
 const parent = {
   variantA: { scale: 1.25 },
@@ -13,9 +12,7 @@ const parent = {
 };
 
 
-
 export default function Home() {
- 
   return (
     <>
       <div>
@@ -118,27 +115,27 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <Link href="/">
-                  <a>
-                    <h4 className="hidden md:flex text-sky-600 dark:sm:text-sky-400 sm:m-10 sm:text-xl sm:font-semibold sm:underline decoration-slice cursor-pointer ">
-                      Fale comigo!
-                    </h4>
+              <Link href="https://wa.me/5561983555195">
+                  <a target="_blank" className="hidden md:flex bg-sky-600 dark:bg-sky-400 text-white dark:text-gray-600 px-3 py-2 mt-5 font-semibold rounded w-60 ml-2 sm:ml-10 shadow-md mb-8  sm:text-md ">
+                    
+                      Fale comigo! 
                   </a>
                 </Link>
               </div>
             </div>
             <div className="md:flex sm:bg-gradient-to-b sm:from-gray-200 dark:sm:bg-gradient-to-r dark:sm:from-gray-700 rounded-full ">
-              <Image
+          <Image
                 src="/foto2.png"
                 alt="fotoRicardo"
                 width="400"
                 height="400"
               />
-              <Link href="/">
-                <a>
-                  <h4 className="md:hidden flex w-11/12 mx-auto justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
+              <Link href="https://wa.me/5561983555195">
+                <a
+                target="_blank"
+                  className="md:hidden flex w-11/12 mx-auto justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
                     Fale comigo!
-                  </h4>
+                  
                 </a>
               </Link>
             </div>

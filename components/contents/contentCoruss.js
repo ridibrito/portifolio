@@ -81,6 +81,9 @@ export default function ContentCoruss() {
                 <Image src="/next-js.svg" alt="html" width="30" height="30" />
               </div>
               <div>
+                <Image src="/type.svg" alt="html" width="30" height="30" />
+              </div>
+              <div>
                 <Image src="/tailwind.svg" alt="html" width="30" height="30" />
               </div>
               <div>
@@ -96,15 +99,11 @@ export default function ContentCoruss() {
           </ul>
         </div>
 
-        <p>
-          <Link href="/coruss">
-            <a className="text-sky-600 text-sm pl-4" >Ver mais...</a>
-          </Link>
-        </p>
+      
         <p className="pl-4 text-sm pb-4">
           Link da aplicação:
-          <Link href="https://coruss.online" >
-            <a className="ml-2 text-sky-600" target="_blank">app.coruss.online</a>
+          <Link href="https://coruss.com.br" >
+            <a className="ml-2 text-sky-600" target="_blank">app.coruss.com.br</a>
           </Link>
         </p>
       </div>

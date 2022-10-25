@@ -12,5 +12,5 @@ module.exports = {
     fontfamily:['Inter var'],
 
   },
-  plugins: [require("flowbite/plugin", '@tailwindcss/forms')],
+  plugins: [],
 }

@@ -70,6 +70,9 @@ export default function ContentSiteCoruss() {
                 <Image src="/next-js.svg" alt="html" width="30" height="30" />
               </div>
               <div>
+                <Image src="/type.svg" alt="html" width="30" height="30" />
+              </div>
+              <div>
                 <Image src="/tailwind.svg" alt="html" width="30" height="30" />
               </div>
              
@@ -79,15 +82,11 @@ export default function ContentSiteCoruss() {
           </ul>
         </div>
 
-        <p>
-          <Link href="/consultas">
-            <a className="text-sky-600 text-sm pl-4"target="_blank">Ver mais...</a>
-          </Link>
-        </p>
+       
         <p className="pl-4 text-sm pb-4">
           Link da aplicação:
-          <Link href="https://site-coruss.vercel.app/">
-            <a className="ml-2 text-sky-600" target="_blank">site-coruss.online</a>
+          <Link href="https://coruss.com.br/site/">
+            <a className="ml-2 text-sky-600" target="_blank">coruss.com.br/site</a>
           </Link>
         </p>
       </div>
