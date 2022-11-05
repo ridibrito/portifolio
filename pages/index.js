@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { BsFillArrowRightSquareFill } from 'react-icons/bs'
 import MyTabs from '../components/Tabs'
 import About from '../components/About'
 import Lgpd from "../components/lgpd";
@@ -115,10 +116,10 @@ export default function Home() {
                 </div>
               </div>
               <div>
-              <Link href="https://wa.me/5561983555195">
-                  <a target="_blank" className="hidden md:flex bg-sky-600 dark:bg-sky-400 text-white dark:text-gray-600 px-3 py-2 mt-5 font-semibold rounded w-60 ml-2 sm:ml-10 shadow-md mb-8  sm:text-md ">
+              <Link target='_blank' href="https://curriculo-three-mauve.vercel.app/">
+                  <a target="_blank" className="hidden md:flex bg-sky-600 items-center gap-4 dark:bg-sky-400 text-white dark:text-gray-600 px-7 py-2 mt-5 font-semibold rounded w-60 ml-2 sm:ml-10 shadow-md mb-8  sm:text-md ">
                     
-                      Fale comigo! 
+                      Meu currículo <BsFillArrowRightSquareFill />
                   </a>
                 </Link>
               </div>
@@ -130,11 +131,11 @@ export default function Home() {
                 width="400"
                 height="400"
               />
-              <Link href="https://wa.me/5561983555195">
+              <Link target='_blank' href="https://curriculo-three-mauve.vercel.app/">
                 <a
                 target="_blank"
-                  className="md:hidden flex w-11/12 mx-auto justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
-                    Fale comigo!
+                  className="md:hidden items-center gap-5 flex w-11/12 mx-auto justify-center py-2 -mt-2 bg-sky-600 shadow-lg rounded-lg text-white font-semibold cursor-pointer ">
+                    Meu currículo <BsFillArrowRightSquareFill />
                   
                 </a>
               </Link>
