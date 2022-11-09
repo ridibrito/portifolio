@@ -44,7 +44,7 @@ export default function Components() {
       <div className="flex gap-3 justify-center">
       <div className="mt-3 shadow border border-gray-300 text-center p-4">
         <Image src="/modal.png" alt='modal' width='300' height='300' />
-        <h2 className="font-semibold text-lg">Modal</h2>
+        <p>Componente modal, com usestate</p>
         <Link href='https://modal-react-psi.vercel.app/'>
             <a target='_blank' className="text-blue-500">https://modal-react-psi.vercel.app/</a>
         </Link>
@@ -54,6 +54,13 @@ export default function Components() {
         <h2 className="font-semibold text-lg">Login</h2>
         <Link href='https://login-react-phi.vercel.app/'>
             <a target='_blank' className="text-blue-500">https://login-react-phi.vercel.app/</a>
+        </Link>
+      </div>
+      <div className="mt-3 shadow border border-gray-300 text-center p-4">
+        <Image src="/dropdown.png" alt='modal' width='300' height='300' />
+        <h2 className="font-semibold text-lg">Menu dropdown</h2>
+        <Link href='https://menu-dropdown.vercel.app/'>
+            <a target='_blank' className="text-blue-500">https://menu-dropdown.vercel.app/</a>
         </Link>
       </div>
       </div>
