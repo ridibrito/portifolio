@@ -6,6 +6,9 @@ import { BsFillArrowRightSquareFill } from 'react-icons/bs'
 import MyTabs from '../components/Tabs'
 import About from '../components/About'
 import Lgpd from "../components/lgpd";
+import { AiOutlineApi, AiOutlineShoppingCart } from "react-icons/ai";
+import { TbComponents } from 'react-icons/tb'
+import { FaRegClone } from 'react-icons/fa'
 
 const parent = {
   variantA: { scale: 1.25 },
@@ -143,9 +146,40 @@ export default function Home() {
           </main>
 
           <section className="bg-gray-200 dark:bg-gray-700  h-full">
+          <div>
+              <h2 className="text-gray-900 text-xl font-normal text-center pt-3 dark:text-gray-400">
+                Projetos desenvolvidos
+              </h2>
+              <div className="sm:flex sm:justify-center mx-3 sm:mx-0 sm:space-y-0 space-y-3">
+              <Link href="/apis">
+              <a  className="border border-sky-600 text-sky-600 px-6 py-2 ml-3 flex items-center gap-2 rounded hover:bg-sky-600 hover:text-white" >
+               <AiOutlineApi />
+                API's
+              </a>
+              </Link>
+              <Link href="/components">
+              <a  className="border border-sky-600 text-sky-600 px-6 py-2 ml-3 flex items-center gap-2 rounded hover:bg-sky-600 hover:text-white" >
+               <TbComponents />
+                Components
+              </a>
+              </Link>
+              <Link href="/clones">
+              <a  className="border border-sky-600 text-sky-600 px-6 py-2 ml-3 flex items-center gap-2 rounded hover:bg-sky-600 hover:text-white" >
+               <FaRegClone />
+                Clones
+              </a>
+              </Link>
+              <Link href="/ecommerce">
+              <a  className="border border-sky-600 text-sky-600 px-6 py-2 ml-3 flex items-center gap-2 rounded hover:bg-sky-600 hover:text-white" >
+               <AiOutlineShoppingCart />
+                Ecommerce
+              </a>
+              </Link>
+              </div>
+          </div>
             <div>
               <h2 className="text-gray-900 text-xl font-normal text-center pt-3 dark:text-gray-400">
-                Alguns trabalhos
+                Projetos em desenvolvimento
               </h2>
             </div>
 
