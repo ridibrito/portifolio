@@ -154,7 +154,7 @@ export default function Home() {
               <Link href="/apis">
               <a  className="border border-sky-600 text-sky-600 px-6 py-2 ml-3 flex items-center gap-2 rounded hover:bg-sky-600 hover:text-white" >
                <AiOutlineApi />
-                API's
+                APIs
               </a>
               </Link>
               <Link href="/components">

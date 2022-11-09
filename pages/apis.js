@@ -14,7 +14,7 @@ export default function Apis() {
               <Link href="/apis">
               <a  className="border border-sky-600 text-sky-600 px-6 py-2 ml-3 flex items-center gap-2 rounded hover:bg-sky-600 hover:text-white" >
                <AiOutlineApi />
-                API's
+                APIs
               </a>
               </Link>
               <Link href="/components">
@@ -39,7 +39,7 @@ export default function Apis() {
               <Link href="/">
         <div className="flex items-center gap-3 ml-5">
           <AiOutlineHome className="text-sky-600 w-6 h-6 cursor-pointer" />
-          <h1 className=" text-2xl">Projetos com API's</h1>
+          <h1 className=" text-2xl">Projetos com APIs</h1>
         </div>
       </Link>
     </>
